@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>محاكاة تصيّد إلكتروني</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+  
+    .container {
+      max-width: 720px;
+      margin: 10px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .logo-top img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+  
+    .tech-icon {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+  
+    .main-title {
+      font-size: 18px;
+      color: #d9534f;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+  
+    .main-title-en {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      text-align: start;
+    }
+  
+    .column p {
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+  
+    .box {
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .wrong {
+      background-color: #ffe0e0;
+      color: #a94442;
+      border: 1px solid #f5c6cb;
+    }
+  
+    .correct {
+      background-color: #e0ffe0;
+      color: #3c763d;
+      border: 1px solid #c3e6cb;
+    }
+  
+    .footer {
+      margin-top: 20px;
+    }
+  
+    .footer p {
+      font-size: 12px;
+      margin: 4px 0;
+    }
+  
+    .email-box {
+      display: inline-block;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      margin: 8px 0;
+    }
+  
+    .logo-bottom img {
+      width: 150px;
+      margin-top: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- شعار أمازون -->
+    <div class="logo-top">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    </div>
+
+    <!-- أيقونة تقنية -->
+    <div class="tech-icon">🛡️</div>
+
+    <!-- العنوان -->
+    <div class="main-title">كانت هذه حملة تصيّد إلكتروني مصرح بها</div>
+    <div class="main-title-en">This was an authorized Phishing Simulation Attack</div>
+
+    <!-- المحتوى الثنائي -->
+   <!-- المحتوى الثنائي -->
+<div class="grid">
+    <!-- عربي -->
+    <div class="column" style="text-align: right;">
+      <p>البريد الإلكتروني الذي قمت بفتحه مؤخرا يمثل جزءا من محاكاة التصيد الاحتيالي،وللمعلومية فإن أكثر من 91% من الاختراقات حول العالم حدثت بسبب أخطاء بشرية ونحرص على أن لا نكون جزءا منها.</p>
+      <p>من الواجب علينا قبل النقر على أي رابط التأكد دائماً من عنوان البريد المرسل. </p>
+      <p> في هذا البريد لم يكن المرسل موثوق: </p> 
+      <div class="box wrong">النطاق الذي دخلت عليه (الخاطئ):<br>www.fake-domain.com</div>
+      <div class="box correct">النطاق الصحيح كان يجب أن يكون:<br>www.official-domain.gov.sa</div>
+    </div>
+  
+    <!-- إنجليزي -->
+    <div class="column" dir="ltr" style="text-align: left;">
+      <p>The recent email you opened was part of a Phishing Stimulation Exercise.
+        Globally, more than 91% of data breaches were caused due to Human Errors in the past and we don't intend to be a part of that statistics.</p>
+        <p> We must always check the sender's email address before clicking on any link.</p>
+      <p>In this phishing email the domain was:</p>
+      <div class="box wrong">The link you clicked:<br>www.fake-domain.com</div>
+      <div class="box correct">The correct link should be:<br>www.official-domain.gov.sa</div>
+    </div>
+  </div>
+
+    <!-- التواصل -->
+    <div class="footer">
+      <p>عند وجود أي استفسار، الرجاء التواصل مع إدارة الأمن السيبراني على البريد الإلكتروني التالي:</p>
+      <p>If you have any questions or concerns, please contact the Cybersecurity Department at</p>
+      <div class="email-box">soc@sfda.gov.sa</div>
+      <p style="color: gray;">ولكم خالص التحية والتقدير</p>
+      <p style="color: gray;">,Best regards</p>
+      <p style="color: gray;">إدارة الأمن السيبراني | Cybersecurity Department</p>
+    </div>
+
+    <!-- شعار الهيئة -->
+    <div class="logo-bottom">
+      <img src="https://media.elhamsol.com/media/application/customers/4f2e513f-467b-48cb-8a7a-58dc400d3472_NCA2x.png">
+    </div>
+
+  </div>
+
+</body>
+</html>
